@@ -48,8 +48,8 @@ A: TNoodle lib seems updated infrequently. If this frequency increases, I will w
 A: I tried with a makefile but decided not to fight it. If you want to do the brave job of converting to make, I will gladly accept a pull request!
 ### License?
 A: MIT, but beware that J2ObjC and TNoodle-lib are licensed Apache 2.0 and GPL 3.0 respectively
-### How do I use the library once included
+### How do I use TNoodle once included?
 A: If you are using swift, you need a [bridging header](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift).
 In your Objective C code or Swift bridging header, `#import "org/worldcubeassociation/tnoodle/scrambles/PuzzleRegistry.h"` and `"org/worldcubeassociation/tnoodle/scrambles/Puzzle.h"`
-From there you can call OrgWorldcubeassociationTnoodleScramblesPuzzleRegistry_get_[Puzzle constant]()
+From there you can call `OrgWorldcubeassociationTnoodleScramblesPuzzleRegistry_get_\[Puzzle constant]()`
 See [TNoodle-lib wiki](https://github.com/thewca/tnoodle-lib/wiki/Using-TNoodle-lib-in-your-application) and [TNoodle-lib puzzle registry source code](https://github.com/thewca/tnoodle-lib/blob/master/scrambles/src/main/java/org/worldcubeassociation/tnoodle/scrambles/PuzzleRegistry.java)
