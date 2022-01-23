@@ -16,7 +16,7 @@ MACOSX_ROOT="$(xcrun --sdk macosx --show-sdk-path)"
 SOURCE_PATHS="$(printf "${TNOODLE_DIR}/%s/src\n" {scrambles,sq12phase,min2phase,threephase,svglite} | paste -sd: - )"
 
 find "${TNOODLE_DIR}"/{scrambles,sq12phase,min2phase,threephase,svglite}/src/main/java -type f -name '*.java' -print0 | \
-	xargs -0 "$J2OBJC" -sourcepath "$SOURCE_PATHS" -classpath "${J2OBJC_DIR}/lib/j2objc_junit.jar" -d "${BUILD}" 
+	xargs -0 "$J2OBJC" --swift-friendly --doc-comments -sourcepath "$SOURCE_PATHS" -classpath "${J2OBJC_DIR}/lib/j2objc_junit.jar" -d "${BUILD}" 
 
 ios_objs=()
 mac_objs=()
