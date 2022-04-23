@@ -1,6 +1,6 @@
 # tnoodle-lib-objc
 
-Script to transpile The WCA'S tnoodle-lib to Objective-C using J2ObjC
+Script to transpile The WCA'S tnoodle-lib to Objective-C using J2ObjC    
 iOS and MacOS releases are provided
 
 ## How-To (prebuilt):
@@ -13,7 +13,7 @@ iOS and MacOS releases are provided
      - Add the path you extracted J2ObjC to, + /include
    - Under "Library Search Paths":
      - Add the path you downloaded libtnoodle.a to
-     - Add the path you extracted J2ObjC to, + /lib (or /lib/macosx, /lib/maccatalyst, /lib/watchos, /lib/appletvos) (not that I have not tested TNoodle on these platforms)
+     - Add the path you extracted J2ObjC to, + /lib (or /lib/macosx, /lib/maccatalyst, /lib/watchos, /lib/appletvos) (note that I have not tested TNoodle on these platforms)
  - Go to "Linking" Section > "Other Linker Flags" and add:
    - -ltnoodle (rename libtnoodle_macos.a or libtnoodle_ios.a just to libtnoodle.a, or set this flag to -ltnoodle_macos or -ltnoodle_ios)
    - -ljre_core
