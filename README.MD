@@ -1,7 +1,8 @@
 # tnoodle-lib-objc
 
-Script to transpile The WCA'S tnoodle-lib to Objective-C using J2ObjC    
-iOS and MacOS releases are provided
+Script to transpile WCA'S tnoodle-lib to Objective-C using J2ObjC. iOS and MacOS releases are provided.
+
+It is important to note that this script was written to use as a part of our parent project. If you would like to see a working example, please refer to [CubeTime](https://github.com/CubeStuffs/CubeTime), where you can see how we have bridged, imported and used tnoodle.
 
 ## How-To (prebuilt):
  - Download the static library (libtnoodle-macos.a or libtnoodle-ios.a) and the headers.tar.gz from the releases section
@@ -43,13 +44,16 @@ iOS and MacOS releases are provided
 
 ## FAQ (not really no one has asked anything yet)
 ### Why not GitHub actions?
-A: TNoodle lib seems updated infrequently. If this frequency increases, I will write a GitHub action.
+tnoodle-lib seems to be updated infrequently. If this frequency increases, I will write a GitHub action.
 ### Why not Makefile?
-A: I tried with a makefile but decided not to fight it. If you want to do the brave job of converting to make, I will gladly accept a pull request!
+I tried with a makefile but decided not to fight it. If you want to do the brave job of converting to make, I will gladly accept a pull request!
 ### License?
-A: MIT, but beware that J2ObjC and TNoodle-lib are licensed Apache 2.0 and GPL 3.0 respectively
+MIT, but beware that J2ObjC and TNoodle-lib are licensed Apache 2.0 and GPL 3.0 respectively
 ### How do I use TNoodle once included?
-A: If you are using swift, you need a [bridging header](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift).
-In your Objective C code or Swift bridging header, `#import "org/worldcubeassociation/tnoodle/scrambles/PuzzleRegistry.h"` and `"org/worldcubeassociation/tnoodle/scrambles/Puzzle.h"`
-From there you can call `OrgWorldcubeassociationTnoodleScramblesPuzzleRegistry_get_\[Puzzle constant]()`
-See [TNoodle-lib wiki](https://github.com/thewca/tnoodle-lib/wiki/Using-TNoodle-lib-in-your-application) and [TNoodle-lib puzzle registry source code](https://github.com/thewca/tnoodle-lib/blob/master/scrambles/src/main/java/org/worldcubeassociation/tnoodle/scrambles/PuzzleRegistry.java)
+If you are using swift, you'll need a [bridging header](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift).
+
+In your Objective-C code or Swift bridging header, `#import` `"org/worldcubeassociation/tnoodle/scrambles/PuzzleRegistry.h"` and `"org/worldcubeassociation/tnoodle/scrambles/Puzzle.h"`.
+
+You can then call `OrgWorldcubeassociationTnoodleScramblesPuzzleRegistry_get_\[Puzzle constant]()` from there.
+
+See [tnoodle-lib wiki](https://github.com/thewca/tnoodle-lib/wiki/Using-TNoodle-lib-in-your-application) and [tnoodle-lib puzzle registry source code](https://github.com/thewca/tnoodle-lib/blob/master/scrambles/src/main/java/org/worldcubeassociation/tnoodle/scrambles/PuzzleRegistry.java).
