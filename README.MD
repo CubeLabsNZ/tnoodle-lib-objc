@@ -1,4 +1,4 @@
-# DEPRECATED: USE [tnoodle-lib-native](https://github.com/CubeStuffs/tnoodle-lib-objc) INSTEAD
+# DEPRECATED: USE [tnoodle-lib-native](https://github.com/CubeStuffs/tnoodle-lib-native) INSTEAD
 
 
 # tnoodle-lib-objc
