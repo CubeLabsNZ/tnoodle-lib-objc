@@ -1,3 +1,6 @@
+# DEPRECATED: USE [tnoodle-lib-native](https://github.com/CubeStuffs/tnoodle-lib-objc) INSTEAD
+
+
 # tnoodle-lib-objc
 
 Script to transpile WCA'S tnoodle-lib to Objective-C using J2ObjC. iOS and MacOS releases are provided.
